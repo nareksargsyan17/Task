@@ -1,0 +1,639 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 80px;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color:#212834;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+}
+header > img{
+    cursor: pointer;
+}
+header > div > *{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+header > div > *:hover{
+    transform: scale(1.1);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+nav > div{
+    padding: 8px 12px;
+    border-radius:6px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+nav > div:hover{
+    background: linear-gradient(180deg, #A37DF9 0%, #7B5AC5 100%);
+}
+nav > div > *{
+    margin: 0px 5px;
+}
+input,select{
+    background-color:transparent;
+    border:none;
+    color:white;
+}
+select{
+    cursor: pointer;
+}
+option{
+    padding: 15px;
+}
+nav>div> select{
+    font-size: 18px;
+}
+header>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header>div>*{
+    margin: 0px 10px;
+}
+.D{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color:#A588E7;
+    border-radius:50%;
+    color:white;
+}
+main{
+    width: 100%;
+    padding: 10px 30px;
+    background-color:#1a202c;
+    display: flex;
+}
+main>section:nth-child(1){
+    margin: 8px;
+    width: 25%;
+    border-radius:10px
+}
+aside{
+    padding: 10px 20px;
+    background-color:#212734;
+    border-radius:10px;
+    margin:10px 0px;
+}
+input::placeholder{
+    color:white;
+}
+.oneAside>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.oneAside>div>div{
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: left;
+    background-color:#1a202c;
+    border-radius:10px;
+    padding: 10px 4px;
+    margin: 5px 0px;
+    border: 1px solid #2B3548;
+    cursor:text;
+}
+main> section:nth-child(1) >aside>div>div>input,select:focus{
+    outline: none;
+}
+#forInput{
+    width: 60%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#forInput>input{
+    width: 70%;
+}
+#forInput > img{
+    cursor: pointer;
+}
+#forSelect{
+    position: relative;
+    width: 30%;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+#forSelect>div>select{
+    appearance: none;
+    width:150px;
+}
+#forSelect>div::before{
+    content: url("img/filter.png");
+    position: absolute;
+    right: 10px;
+    width: 20%;
+    height: 100%;
+    pointer-events: none;
+}
+#forSearch{
+    width: 100%;
+    padding: 10px 40px;
+}
+#forSearch>img{
+    margin-right: 15px;
+}
+#forSearch>input::placeholder{
+    font-size: 15px;
+}
+.meta{
+    display:flex;
+    margin: 5px 5px;
+    padding: 0px 5px;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+    font-size: 14px;
+}
+.meta>span:nth-child(3){
+    color:#FF0000;;
+}
+.meta>div{
+    background-color:transparent !important;
+    border:none !important;
+}
+.meta>div>*{
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.meta>div>*:hover{
+    transform: scale(1.1);
+}
+#binance{
+    display: flex;
+    flex-direction: column;
+    background-color:#1a202c;
+    border-radius:10px;
+    padding: 10px 5px;
+}
+#binance >div{
+    display: flex;
+    width: 100%;
+    background-color:transparent;
+    border:none;
+}
+#binance > div > div{
+    display: block;
+    color:white;
+    width: 45%;
+    padding-right: 20%;
+}
+#leftAside > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#leftAside > p{
+    margin: 15px 0px;
+    font-size: 18px;
+}
+#rightAside>span{
+    color:#61E224;
+}
+#binance > img{
+    width: 90%;
+    margin: 20px auto;
+}
+#binance > button{
+    width: 90%;
+    border: none;
+    background-color:transparent;
+    border-radius:10px;
+    cursor: pointer;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color:white;
+    margin: 5px 5%;
+    padding: 5px;
+}
+#binance > button:hover{
+    background-color:#212734;
+}
+#binance > button > *{
+    margin: 0px 10px;
+}
+.twoAside:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+}
+.twoAside>div{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+.twoAside > div> span{
+    margin: 20px 0px;
+}
+.twoAside > div> span >span{
+    color:#E04F44;
+}
+.twoAside > div > button{
+    padding: 8px;
+    border:none;
+    border-radius:10px;
+    background-color:#A37DF9;
+    color:white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.twoAside > div > button:hover{
+    background-color:#a27df9a5;
+}
+.twoAside>img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.twoAside>img:hover{
+    transform: scale(1.1);
+}
+main>section:nth-child(2){
+    margin: 8px;
+}
+main>section:nth-child(2)> div{
+    display: flex;
+}
+main>section:nth-child(2)> div > div{
+    padding: 15px 15px;
+    background-color:#212734;
+    border-radius:10px;
+    margin:10px 5px;
+}
+#graph{
+    width: 50%;
+}
+#functions{
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 62%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+#functions > *{
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+#functions > *:hover{
+    transform: scale(1.1);
+}
+#forImage>img:nth-child(1){
+    width: 100%;
+}
+#forImage>img:nth-child(2){
+    position: absolute;
+    right: 10.8%;
+    top:46%
+}
+#forImage{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#forCheck{
+    width: 30%;
+    margin-top: 15px;
+    margin-left: 50%;
+    display: flex;
+    align-items:center;
+}
+#forCheck > label{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 0px 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+#forCheck > label > *{
+    margin: 0px 5px;
+}
+#forCheck > label > input{
+    appearance: none;
+    width: 13px;
+    height: 15px;
+    border: 0.2px solid #805AD5;
+}
+#forCheck > label > input:checked::before{
+    content: url("img/check.png");
+    background:transparent;
+}
+#forCheck > label:nth-child(1){
+    color:#128994;
+}
+#forCheck > label:nth-child(2){
+    color:#58C925;
+}
+#forCheck > label:nth-child(3){
+    color:#CAD9FF;
+}
+.points{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+}
+.points > div>*{
+    margin: 0px 5px;
+}
+.points > div>select{
+    background-color:transparent;
+    border: 1px solid white;
+    color:white;
+    width: 80px;
+    padding: 3px;
+}
+.points > span{
+    color: #805AD5;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.points > span:hover{
+    transform: scale(1.05);
+}
+.points>p{
+    font-size: 17px;
+}
+#count{
+    width: 30%;
+}
+#count >img{
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+}
+#eval{
+    width: 20%;
+}
+#eval>.forEval{
+    width: 90%;
+    height: 150px;
+    margin: 30px auto;
+    display: flex;
+    background-image:url("img/eval.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    color:white;
+    font-size: 12px;
+}
+.forEval > div>*{
+    margin-bottom: 3px;
+    text-align: center;
+}
+.forEval > div > p > img{
+    margin-right: 5px;
+}
+.forEval >div:nth-child(1)> p > span{
+    color:#61E224;
+}
+.forEval >div:nth-child(2)> p > span{
+    color:#D23737;
+}
+
+.options{
+    width: 98%;
+    margin: 5px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
+    color:white; 
+    font-size: 10px;
+}
+.options > *{
+    border:0.3px solid transparent;
+    padding: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.options > *:hover{
+    border:0.3px solid #A3A0A0;
+    border-radius:1px;
+    background: #1A202C;
+}
+#coinsGraph{
+    width: 35%;
+    padding: 0;
+}
+#coinsGraph > div:nth-child(1){
+    display: flex;
+    align-items:center;
+    padding: 15px;
+}
+#coinsGraph > div >.D{
+    width: 60px;
+    height: 60px;
+    margin: 10px 20px 10px 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.info > span{
+    color:white;
+    font-size: 17px;
+}
+.info > div{
+    display: flex;
+    align-items:center;
+    margin-bottom: 10px;
+}
+.info > div >span{
+    color: #805AD5;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.forGraph{
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background-image: url("img/coinGraph.png");
+    background-size: cover;
+    background-position: 50% 100%;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.forGraph > div{
+    width: 70%;
+    font-size: 13px;
+}
+.forGraph > div >*{
+    padding: 6px;
+}
+#analytics{
+    width: 30%;
+}
+.items{
+    width: 100%;
+    padding: 10px 10px;
+}
+.items>div{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 15px;
+    margin: 10px 0px;
+    border-radius:8px;
+    border: 0.7px solid #805AD5;
+    background: linear-gradient(180deg, #2B3341 0%, rgba(61, 73, 95, 0.00693628) 99.99%, rgba(33, 39, 51, 0) 100%);
+    filter: drop-shadow(0px 2.72575px 2.72575px rgba(0, 0, 0, 0.25));
+    color:white;
+    font-size: 11px;
+}
+.items>div >p{
+    color:#996FF8;
+}
+.items>div>span>img{
+    width: 10px;
+    margin-right: 2px;
+}
+#futures{
+    width: 35%;
+}
+.total{
+    width: 100%;
+    padding: 10px 15px;
+}
+.total > .forTotal{
+    border: 0.5px solid #686868;
+    padding: 15px;
+    border-radius:5px;
+    background: linear-gradient(180deg, #2B3341 0%, rgba(61, 73, 95, 0.00693628) 99.99%, rgba(33, 39, 51, 0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:white;
+}
+.forTotal > div:nth-child(1){
+    width: 50%;
+}
+.forTotal > div >p{
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+.forTotal > div > span{
+    margin: 5px 3px 0px 0px;
+    font-size: 13px;
+}
+.forTotal > div > span > img{
+    margin-right: 3px;
+}
+.modal{
+    width: 40%;
+    padding: 8px;
+    text-align: center;
+    background: linear-gradient(180deg, #2B3341 0%, rgba(61, 73, 95, 0.00693628) 99.99%, rgba(33, 39, 51, 0) 100%);
+    border: 0.239945px solid #686868;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 2.48626px;
+}
+#totalGraph{
+    width: 100%;
+    height: 90px;
+    background-image:url("img/totalGraph.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:50% 100%;
+    margin: 5px 0px;
+    border: 0.482541px solid #686868;
+    border-radius: 5px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: left;
+}
+#totalGraph > .options{
+    width: 45%;
+    font-size: 8px;
+    margin: 5px;
+}
+#totalGraph > .options > *{
+    padding: 2px;
+}
+#totalOptions{
+    width: 95%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 5px;
+    color:white;
+    font-size: 12px;
+}
+#totalOptions>div:nth-child(1){
+    width: 25%;
+}
+#totalOptions>div:nth-child(2){
+    width: 30%;
+}
+#totalOptions>div:nth-child(3){
+    width: 30%;
+}
+#totalOptions>div>h5{
+    border: 0.786545px solid #DCCDFF;
+    margin: 8px 0px;
+}
+#totalOptions>div:nth-child(n+2)>span{
+    color:#805AD5;
+}
+#thirdRow > div{
+    width: 100%;
+}
+#forOptions{
+    padding: 0;
+}
+#forOptions > .points{
+    padding: 20px 20px 0px 20px;
+}
+#forOptions > table{
+    width: 100%;
+    text-align: left;
+    margin: 20px auto;
+    color:white;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+#forOptions > table >tbody> tr>*{
+    padding: 10px 30px;
+    align-items:center
+}
+#forOptions > table >tbody> tr:nth-child(1){
+    background: #272E3C;
+}
+#forOptions > table >tbody> tr:nth-child(n+2){
+    border-bottom: 1px solid #3B3D50;
+}
+#forOptions > table >tbody> tr>*>img{
+    margin-right: 2px;
+}
+#forOptions > table >tbody> tr>td:nth-child(4){
+    color:#34D35C;
+}
+#forOptions > table >tbody> tr>*:last-child{
+    cursor: pointer;
+}
